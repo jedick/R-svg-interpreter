@@ -5,6 +5,13 @@
 - Gradients not working.
 - Thanks to [Barry Rowlingson for the R-help message](https://stat.ethz.ch/pipermail/r-help/2025-June/481075.html) that I copied to `notes.R` to kickstart this chat.
 
+## Usage
+
+```r
+source("svg_interpreter.R")
+savePlot("Rlogo.png")
+```
+
 <div align="center">
   <img src="Rlogo.png" alt="R logo plotted in R" style="width:50%;"/>
 </div>
