@@ -16,6 +16,19 @@ savePlot("Rlogo.png")
   <img src="Rlogo.png" alt="R logo plotted in R" style="width:50%;"/>
 </div>
 
+## Licenses
+
+The code in this repository is authored by Jeffrey Dick with AI assistance and is distributed under the MIT license.
+
+Text attributed to Barry Rowlingson is taken from the [R-help mailing list](https://stat.ethz.ch/mailman/listinfo/r-help). The [R posting guide](https://www.r-project.org/posting-guide.html) says:
+
+> Posters should be aware that the R lists are public discussion lists and anything you post will be archived and accessible via several websites for many years.
+
+The [R logo](https://www.r-project.org/logo/) carries this text:
+
+> The R logo is © 2016 The R Foundation.
+> You can distribute the logo under the terms of the Creative Commons Attribution-ShareAlike 4.0 International license (CC-BY-SA 4.0) or (at your option) the GNU General Public License version 2 (GPL‑2).
+
 ## R script for SVG interpretation and plotting
 _Exported on 7/5/2025 at 12:40:50 GMT+8 from Cursor (1.2.1)_
 
