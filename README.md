@@ -3,28 +3,43 @@
 - Visualize an SVG file with base R graphics
 - Written with [Cursor](https://cursor.com/home)
 - Tested with `Rlogo.svg`
-- Gradients not working
+- Two drawing methods:
+  - `polygon`: faster, no gradients
+  - `raster`: slower, with gradients
 
-*Thanks to Barry Rowlingson for an [R-help message](https://stat.ethz.ch/pipermail/r-help/2025-June/481075.html) about drawing an SVG image in R. I used [that message as context](notes.md) for the chat with Cursor.*
+*Thanks to Barry Rowlingson for an [R-help message](https://stat.ethz.ch/pipermail/r-help/2025-June/481075.html) about drawing an SVG image in R. I used [that message as context](notes.md) for the first chat with Cursor.*
 
 ## Usage
 
 ```r
 source("svg_interpreter.R")
-savePlot("Rlogo.png")
+
+# Default is "polygon" method
+plot_r_logo()
+savePlot("Rlogo_polygon.png")
+
+# Use darker colors
+plot_r_logo(gradient_color = "middle")
+plot_r_logo(gradient_color = "last")
+
+# Draw gradients at high resolution
+plot_r_logo(method = "raster", resolution = 600)
+savePlot("Rlogo_raster.png")
 ```
 
 <div align="center">
-  <img src="Rlogo.png" alt="R logo plotted in R" style="width:50%;"/>
+  <img src="Rlogo_polygon.png" alt="R logo plotted in R (polygon method)" style="width:35%;"/>
+  <img src="Rlogo_raster.png" alt="R logo plotted in R (raster method)" style="width:35%;"/>
 </div>
 
 ## Chat history
 
-- [Chat 1](chat1.md)
+- [Chat 1](chat1.md) &ndash; R script for SVG interpretation and plotting
+- [Chat 2](chat2.md) &ndash; Update code to use gradient colors
 
 ## Licenses
 
-The code in this repository was authored by Jeffrey Dick with AI assistance and is distributed under the MIT license.
+The R code in this repository was authored by Jeffrey Dick with AI assistance and is distributed under the MIT license.
 
 Text attributed to Barry Rowlingson is taken from the [R-help mailing list](https://stat.ethz.ch/mailman/listinfo/r-help). The [R posting guide](https://www.r-project.org/posting-guide.html) says:
 
