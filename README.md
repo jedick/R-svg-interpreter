@@ -3,7 +3,7 @@
 - Visualize an SVG file with base R graphics.
 - Written with [Cursor](https://cursor.com/home) and tested with `Rlogo.svg`.
 - Gradients not working.
-- Thanks to [Barry Rowlingson for the R-help message](https://stat.ethz.ch/pipermail/r-help/2025-June/481075.html) that I copied to `notes.R` to kickstart this chat.
+- Thanks to [Barry Rowlingson for the R-help message](https://stat.ethz.ch/pipermail/r-help/2025-June/481075.html) that I copied to `notes.md` to kickstart this chat.
 
 ## Usage
 
@@ -36,7 +36,7 @@ _Exported on 7/5/2025 at 12:40:50 GMT+8 from Cursor (1.2.1)_
 
 **User**
 
-Write R code that acts as a simple SVG interpreter. For this specific case, the script should 1) read Rlogo.svg, 2) parse the SVG commands, and 3) plot the image using base R graphics. See the comments in notes.R for some hints.
+Write R code that acts as a simple SVG interpreter. For this specific case, the script should 1) read Rlogo.svg, 2) parse the SVG commands, and 3) plot the image using base R graphics. See the comments in notes.md for some hints.
 
 ---
 
