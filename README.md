@@ -4,12 +4,14 @@
 - Written with [Cursor](https://cursor.com/home)
 - Tested with `Rlogo.svg`
 - Two drawing methods:
-  - `polygon`: faster, no gradients
-  - `raster`: slower, with gradients
+  - `polygon` &ndash; faster; no gradients
+  - `raster` &ndash; slower; with gradients
 
-*Thanks to Barry Rowlingson for an [R-help message](https://stat.ethz.ch/pipermail/r-help/2025-June/481075.html) about drawing an SVG image in R. I used [that message as context](notes.md) for the first chat with Cursor.*
+*Thanks to Barry Rowlingson for an [R-help message](https://stat.ethz.ch/pipermail/r-help/2025-June/481075.html) about how to approach drawing an SVG image in R. I used [that message as context](notes.md) for the first chat with Cursor.*
 
 ## Usage
+
+Put `Rlogo.svg` and `svg_interpreter.R` in the working directory, then run these commands:
 
 ```r
 source("svg_interpreter.R")
